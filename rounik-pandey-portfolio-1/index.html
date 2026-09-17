@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rounik Pandey | Metallurgical Engineering Student &amp; CEO, Roomie's</title>
+<meta name="description" content="Rounik Pandey — Metallurgical Engineering student at Government Polytechnic Adityapur (2024–2027), CEO of Roomie's, and BCCL intern in material extraction and metallurgical maintenance. Portfolio, projects, skills and contact.">
+<meta name="keywords" content="Rounik Pandey, Rounik Pandey CEO, Rounik Pandey Roomie's, Rounik Pandey metallurgy, Government Polytechnic Adityapur, metallurgical engineering student">
+<meta name="author" content="Rounik Pandey">
+<meta property="og:title" content="Rounik Pandey | Metallurgical Engineering Student &amp; CEO, Roomie's">
+<meta property="og:description" content="Portfolio of Rounik Pandey — metallurgical engineer in the making, founder of Roomie's, athlete and traveller.">
+<meta property="og:type" content="profile">
+<link rel="canonical" href="https://rounikpandey.com/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rounik Pandey",
+  "jobTitle": "CEO, Roomie's",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Government Polytechnic Adityapur"
+  },
+  "sameAs": ["https://pin.it/72DhDFSit"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --iron:#181816;
+    --iron-2:#232320;
+    --ash:#8b8b83;
+    --ember:#e8622c;
+    --ember-dim:#a8461d;
+    --bronze:#c89b3c;
+    --slag:#3a3d3a;
+    --paper:#f1ede2;
+    --paper-dim:#cfc9b8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--iron);
+    color:var(--paper);
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--ember);color:var(--iron);}
+
+  h1,h2,h3{
+    font-family:'Big Shoulders Display',sans-serif;
+    font-weight:900;
+    letter-spacing:0.01em;
+    line-height:0.95;
+    color:var(--paper);
+  }
+
+  a{color:var(--ember);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  .wrap{
+    max-width:840px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* subtle metallic grain texture */
+  .grain{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:0.05;
+    background-image:repeating-linear-gradient(115deg, #fff 0px, #fff 1px, transparent 1px, transparent 3px);
+    z-index:1;
+  }
+
+  header.hero{
+    position:relative;
+    min-height:92vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:120px 0 60px;
+    border-bottom:1px solid var(--slag);
+    background:
+      radial-gradient(ellipse 900px 500px at 85% -10%, rgba(232,98,44,0.18), transparent 60%),
+      linear-gradient(180deg, var(--iron) 0%, #151513 100%);
+  }
+  .hero-flex{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:48px;
+    flex-wrap:wrap-reverse;
+  }
+  .hero-text{flex:1 1 420px;}
+  .profile-frame{
+    flex:0 0 auto;
+    width:min(280px, 40vw);
+    aspect-ratio:4/5;
+    position:relative;
+    border:1px solid var(--slag);
+    padding:10px;
+  }
+  .profile-frame::before{
+    content:"";
+    position:absolute;
+    top:-1px;left:-1px;
+    width:22px;height:22px;
+    border-top:2px solid var(--ember);
+    border-left:2px solid var(--ember);
+  }
+  .profile-frame::after{
+    content:"";
+    position:absolute;
+    bottom:-1px;right:-1px;
+    width:22px;height:22px;
+    border-bottom:2px solid var(--ember);
+    border-right:2px solid var(--ember);
+  }
+  .profile-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top center;
+    display:block;
+    filter:grayscale(15%) contrast(1.05);
+  }
+  .heat-line{
+    font-family:'Source Serif 4',serif;
+    font-style:italic;
+    font-size:1.05rem;
+    color:var(--bronze);
+    margin-bottom:22px;
+  }
+  h1.name{
+    font-size:clamp(3.2rem,10vw,7.2rem);
+    text-transform:uppercase;
+    margin-bottom:6px;
+  }
+  .name-sub{
+    font-family:'Source Serif 4',serif;
+    font-size:clamp(1.1rem,2.4vw,1.5rem);
+    color:var(--paper-dim);
+    max-width:560px;
+    margin-top:18px;
+  }
+  .hero-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 28px;
+    margin-top:36px;
+    font-size:0.92rem;
+    color:var(--ash);
+  }
+  .hero-meta span{white-space:nowrap;}
+  .hero-meta strong{color:var(--paper);font-weight:600;}
+
+  nav.rail{
+    position:sticky;
+    top:0;
+    z-index:5;
+    background:rgba(24,24,22,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--slag);
+  }
+  nav.rail .wrap{
+    display:flex;
+    gap:22px;
+    overflow-x:auto;
+    padding-top:14px;
+    padding-bottom:14px;
+    font-size:0.85rem;
+  }
+  nav.rail a{
+    color:var(--paper-dim);
+    white-space:nowrap;
+  }
+  nav.rail a:hover{color:var(--ember);text-decoration:none;}
+
+  section{
+    padding:88px 0;
+    border-bottom:1px solid var(--slag);
+    position:relative;
+  }
+  section:last-of-type{border-bottom:none;}
+
+  .kicker{
+    font-family:'Source Serif 4',serif;
+    font-style:italic;
+    color:var(--bronze);
+    font-size:0.95rem;
+    margin-bottom:10px;
+  }
+  h2.section-title{
+    font-size:clamp(2.2rem,6vw,3.4rem);
+    text-transform:uppercase;
+    margin-bottom:34px;
+    max-width:600px;
+  }
+
+  .about-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+  .about-lede{
+    font-family:'Source Serif 4',serif;
+    font-size:1.3rem;
+    line-height:1.55;
+    color:var(--paper);
+    max-width:620px;
+  }
+  .about-lede em{color:var(--ember);font-style:normal;}
+  .trait-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:26px;
+  }
+  .trait{
+    border:1px solid var(--slag);
+    color:var(--paper-dim);
+    padding:7px 16px;
+    border-radius:2px;
+    font-size:0.85rem;
+  }
+
+  .edu-block{
+    display:flex;
+    gap:24px;
+    align-items:baseline;
+    flex-wrap:wrap;
+  }
+  .edu-year{
+    font-family:'Big Shoulders Display',sans-serif;
+    font-weight:700;
+    color:var(--ember);
+    font-size:1.6rem;
+    min-width:120px;
+  }
+  .edu-detail h3{
+    font-size:1.4rem;
+    text-transform:none;
+    font-weight:700;
+    color:var(--paper);
+    margin-bottom:4px;
+  }
+  .edu-detail p{color:var(--ash);font-size:0.95rem;}
+  .edu-list{display:flex;flex-direction:column;gap:30px;}
+
+  .skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:0;
+    border-top:1px solid var(--slag);
+    border-left:1px solid var(--slag);
+  }
+  .skill-cell{
+    border-right:1px solid var(--slag);
+    border-bottom:1px solid var(--slag);
+    padding:26px 22px;
+  }
+  .skill-cell h3{
+    font-size:1.1rem;
+    text-transform:uppercase;
+    color:var(--ember);
+    margin-bottom:8px;
+    font-weight:700;
+  }
+  .skill-cell p{color:var(--paper-dim);font-size:0.92rem;}
+
+  .project-card{
+    border:1px solid var(--slag);
+    padding:34px;
+    background:linear-gradient(180deg, rgba(232,98,44,0.04), transparent);
+  }
+  .project-role{
+    display:inline-block;
+    color:var(--ember);
+    font-size:0.85rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    margin-bottom:14px;
+  }
+  .project-card h3{
+    font-size:2rem;
+    text-transform:uppercase;
+    margin-bottom:14px;
+  }
+  .project-card p{color:var(--paper-dim);max-width:600px;margin-bottom:10px;}
+
+  .intern-list{display:flex;flex-direction:column;}
+  .intern-item{
+    display:grid;
+    grid-template-columns:44px 1fr;
+    gap:18px;
+    padding:26px 0;
+    border-top:1px solid var(--slag);
+  }
+  .intern-item:last-child{border-bottom:1px solid var(--slag);}
+  .intern-num{
+    font-family:'Big Shoulders Display',sans-serif;
+    font-weight:700;
+    color:var(--bronze);
+    font-size:1.6rem;
+  }
+  .intern-item h3{
+    font-size:1.25rem;
+    text-transform:none;
+    font-weight:700;
+    margin-bottom:6px;
+  }
+  .intern-item p{color:var(--paper-dim);font-size:0.95rem;}
+  .intern-org{color:var(--ash);font-size:0.85rem;}
+
+  .interest-strip{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+  .interest-pill{
+    border:1px solid var(--slag);
+    padding:12px 20px;
+    font-size:0.95rem;
+    color:var(--paper-dim);
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .interest-pill strong{color:var(--paper);font-weight:600;}
+
+  .gallery-grid{
+    column-count:3;
+    column-gap:6px;
+  }
+  .gallery-grid a{
+    display:block;
+    overflow:hidden;
+    position:relative;
+    margin-bottom:6px;
+    break-inside:avoid;
+  }
+  .gallery-grid img{
+    width:100%;
+    height:auto;
+    display:block;
+    filter:grayscale(20%) contrast(1.05);
+    transition:filter 0.35s ease, transform 0.35s ease;
+  }
+  .gallery-grid a:hover img{
+    filter:grayscale(0%) contrast(1.05);
+    transform:scale(1.04);
+  }
+  @media (max-width:640px){
+    .gallery-grid{column-count:2;}
+  }
+
+  footer.contact{
+    padding:100px 0 60px;
+    background:linear-gradient(180deg, #151513 0%, var(--iron) 100%);
+  }
+  footer h2{
+    font-size:clamp(2.4rem,7vw,4rem);
+    text-transform:uppercase;
+    margin-bottom:20px;
+  }
+  footer p.lede{
+    font-family:'Source Serif 4',serif;
+    font-size:1.15rem;
+    color:var(--paper-dim);
+    max-width:520px;
+    margin-bottom:36px;
+  }
+  .contact-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:28px;
+    font-size:1rem;
+  }
+  .contact-links a{
+    color:var(--paper);
+    border-bottom:1px solid var(--ember);
+    padding-bottom:2px;
+  }
+  .btn-contact{
+    border:1px solid var(--slag) !important;
+    padding:14px 24px;
+    font-size:0.95rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+  }
+  .btn-whatsapp{
+    background:var(--ember);
+    color:var(--iron) !important;
+    border-color:var(--ember) !important;
+  }
+  .btn-whatsapp:hover{
+    background:var(--ember-dim);
+    text-decoration:none;
+  }
+  .btn-call{
+    color:var(--paper) !important;
+    border-color:var(--bronze) !important;
+  }
+  .btn-call:hover{
+    background:var(--bronze);
+    color:var(--iron) !important;
+    text-decoration:none;
+  }
+  .foot-note{
+    margin-top:60px;
+    color:var(--ash);
+    font-size:0.8rem;
+  }
+
+  @media (max-width:600px){
+    header.hero{padding-top:100px;}
+    section{padding:64px 0;}
+    .skills-grid{border-left:none;}
+    .skill-cell{border-left:1px solid var(--slag);}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<nav class="rail">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#internships">Internships</a>
+    <a href="#interests">Interests</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-flex">
+      <div class="hero-text">
+        <p class="heat-line">Metallurgical Engineering · Class of 2027</p>
+        <h1 class="name">Rounik<br>Pandey</h1>
+        <p class="name-sub">Final-year diploma student shaping metal and momentum — from the furnace floor at BCCL to the CEO's seat at Roomie's.</p>
+        <div class="hero-meta">
+          <span><strong>Branch —</strong> Metallurgical Engineering</span>
+          <span><strong>College —</strong> Government Polytechnic Adityapur</span>
+          <span><strong>Role —</strong> CEO, Roomie's</span>
+        </div>
+      </div>
+      <div class="profile-frame">
+        <img src="images/profile.jpg" alt="Rounik Pandey portrait" width="280" height="350">
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <p class="kicker">Who I am</p>
+    <h2 class="section-title">About</h2>
+    <div class="about-grid">
+      <p class="about-lede">I treat most days like a training set and a strategy session at once. I'm an <em>athlete</em> first — I show up to compete, not just participate — and a lifelong <em>Marvel</em> follower who's watched the universe rebuild itself more times than I can count. Somewhere between matches and movies, I've picked up the habit of pulling knowledge from every field I touch, because a metallurgist who only knows metallurgy is only half-useful.</p>
+      <p class="about-lede">I ride more than I drive — bikes over cars, always — because the road gives you less comfort and more feedback, and feedback is what I actually want. Consistency is the trait I'd bet on if you asked people who know me.</p>
+      <div class="trait-row">
+        <span class="trait">Athlete</span>
+        <span class="trait">Quick learner</span>
+        <span class="trait">Marvel loyalist</span>
+        <span class="trait">Rides, doesn't just drives</span>
+        <span class="trait">Cross-field curiosity</span>
+        <span class="trait">Consistent by design</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <p class="kicker">Academic record</p>
+    <h2 class="section-title">Education</h2>
+    <div class="edu-list">
+      <div class="edu-block">
+        <span class="edu-year">2024–27</span>
+        <div class="edu-detail">
+          <h3>Diploma in Metallurgical Engineering</h3>
+          <p>Government Polytechnic Adityapur — final-year student, currently in progress.</p>
+        </div>
+      </div>
+      <div class="edu-block">
+        <span class="edu-year">2024</span>
+        <div class="edu-detail">
+          <h3>Matriculation</h3>
+          <p>DAV Public School, Kusunda, Dhanbad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <p class="kicker">What I bring</p>
+    <h2 class="section-title">Skills</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-cell">
+      <h3>Quick Learning</h3>
+      <p>Pick up new tools, processes and domains fast enough to be useful on day one, not week ten.</p>
+    </div>
+    <div class="skill-cell">
+      <h3>Fast Decision-Making</h3>
+      <p>Comfortable making calls under time pressure across any plan or project, without freezing on incomplete data.</p>
+    </div>
+    <div class="skill-cell">
+      <h3>Strategic Planning</h3>
+      <p>Build and adjust strategy on the fly — treat every plan as a working draft, not a fixed script.</p>
+    </div>
+    <div class="skill-cell">
+      <h3>Observation</h3>
+      <p>Notice the details in a process or a person that most people scroll past — and act on them.</p>
+    </div>
+    <div class="skill-cell">
+      <h3>Consistency</h3>
+      <p>Show up the same way on the good days and the bad ones — the trait that compounds every other skill.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <p class="kicker">Building something</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="project-card">
+      <span class="project-role">CEO &amp; Sr. Consultant</span>
+      <h3>Roomie's</h3>
+      <p>A room-matching platform I'm building with a small team — we find available rooms and connect them to students and corporate professionals who need one. It isn't a reinvention of an existing model, but we're pushing to expand it as far as it'll go and make it genuinely useful for everyone on both sides of the match.</p>
+      <p>I run the CEO seat day to day: managing the data, handling client relationships, and steering where the platform grows next.</p>
+    </div>
+  </div>
+</section>
+
+<section id="internships">
+  <div class="wrap">
+    <p class="kicker">Hands-on experience</p>
+    <h2 class="section-title">Internships</h2>
+    <div class="intern-list">
+      <div class="intern-item">
+        <span class="intern-num">01</span>
+        <div>
+          <h3>Extraction of Materials</h3>
+          <p>Fieldwork focused on the extraction stage of the metallurgical process — from raw material handling to the early steps of processing.</p>
+          <p class="intern-org">BCCL</p>
+        </div>
+      </div>
+      <div class="intern-item">
+        <span class="intern-num">02</span>
+        <div>
+          <h3>Metallurgical Aspects in Maintenance &amp; Repair</h3>
+          <p>Applied metallurgical principles to real maintenance and repair scenarios — diagnosing wear and failure from a materials standpoint.</p>
+          <p class="intern-org">BCCL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="interests">
+  <div class="wrap">
+    <p class="kicker">Beyond the lab</p>
+    <h2 class="section-title">Interests</h2>
+    <div class="interest-strip">
+      <span class="interest-pill"><strong>Sports</strong> — plays and competes across multiple disciplines</span>
+      <span class="interest-pill"><strong>Cricket</strong> — CSK supporter through every season</span>
+      <span class="interest-pill"><strong>Marvel</strong> — consistent, long-time follower</span>
+      <span class="interest-pill"><strong>Fine Arts</strong> — 4-year diploma in painting</span>
+      <span class="interest-pill"><strong>Travel</strong> — exploring new places and Indian mythology &amp; history</span>
+      <span class="interest-pill"><strong>Bikes</strong> — prefers two wheels over four</span>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <p class="kicker">In frame</p>
+    <h2 class="section-title">Gallery</h2>
+  </div>
+  <div class="wrap">
+    <div class="gallery-grid">
+      <a href="images/gallery-6.jpg" target="_blank" rel="noopener">
+        <img src="images/gallery-6.jpg" alt="Rounik Pandey in a navy blazer, studio lighting" loading="lazy">
+      </a>
+      <a href="images/gallery-3.jpg" target="_blank" rel="noopener">
+        <img src="images/gallery-3.jpg" alt="Rounik Pandey in a lavender sherwani" loading="lazy">
+      </a>
+      <a href="images/gallery-8.jpg" target="_blank" rel="noopener">
+        <img src="images/gallery-8.jpg" alt="Rounik Pandey by a lake in a beige jacket" loading="lazy">
+      </a>
+      <a href="images/gallery-1.jpg" target="_blank" rel="noopener">
+        <img src="images/gallery-1.jpg" alt="Rounik Pandey at an evening event" loading="lazy">
+      </a>
+      <a href="images/gallery-5.jpg" target="_blank" rel="noopener">
+        <img src="images/gallery-5.jpg" alt="Rounik Pandey seated on a park bench in sunglasses" loading="lazy">
+      </a>
+      <a href="images/gallery-7.jpg" target="_blank" rel="noopener">
+        <img src="images/gallery-7.jpg" alt="Rounik Pandey in a navy blazer with string lights" loading="lazy">
+      </a>
+      <a href="images/gallery-2.jpg" target="_blank" rel="noopener">
+        <img src="images/gallery-2.jpg" alt="Rounik Pandey outdoors in the forest" loading="lazy">
+      </a>
+      <a href="images/gallery-9.jpg" target="_blank" rel="noopener">
+        <img src="images/gallery-9.jpg" alt="Rounik Pandey in a denim jacket, side profile" loading="lazy">
+      </a>
+      <a href="images/gallery-4.jpg" target="_blank" rel="noopener">
+        <img src="images/gallery-4.jpg" alt="Rounik Pandey at a cafe" loading="lazy">
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <p class="kicker">Get in touch</p>
+    <h2>Let's connect</h2>
+    <p class="lede">Open to conversations on metallurgy, Roomie's, or where to find the best cricket highlights during CSK season.</p>
+    <div class="contact-links">
+      <a href="https://wa.me/917992246247?text=Hi%20Rounik%2C%20I%20came%20across%20your%20portfolio%20and%20wanted%20to%20connect." target="_blank" rel="noopener" class="btn-contact btn-whatsapp">WhatsApp — message me</a>
+      <a href="tel:+917992246247" class="btn-contact btn-call">Call — +91 79922 46247</a>
+      <a href="https://pin.it/72DhDFSit" target="_blank" rel="noopener">Pinterest — Marvel board</a>
+    </div>
+    <p class="foot-note">Rounik Pandey — Metallurgical Engineering, Government Polytechnic Adityapur (2024–2027) · CEO, Roomie's</p>
+  </div>
+</footer>
+
+</body>
+</html>
